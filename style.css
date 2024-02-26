@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(207, 201, 201);
+    color: rgb(63, 59, 59);
+}
+
+
+.site-header, .site-footer{
+    background-color: rgb(68, 197, 98);
+    color: white;
+}
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation li{
+    padding: 0 15px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+}
