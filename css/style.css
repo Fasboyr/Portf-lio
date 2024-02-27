@@ -13,6 +13,7 @@ body{
 .site-header, .site-footer{
     background-color: rgb(68, 197, 98);
     color: white;
+    padding: 20px 0;
 }
 .main-navigation ul{
     display: flex;
@@ -42,4 +43,33 @@ body{
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.project-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item{
+    background-color: white;
+    box-shadow: 0 0 10px #b3b0b0;
+    border-radius: 5px;
+}
+
+.project-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-bottom: 3px solid;
+}
+
+.project-info{
+    padding: 10px;
 }
