@@ -9,31 +9,89 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fffafa;
+    background-color: #cdf1cb;
     color: #3f3b3b;
 }
 
-
-.site-header, .site-footer{
+/*
+.site-footer{
     background-color: var(--primary-color);
     color: var(--text-color);
     font-size: larger;
-    padding: 20px 0;
+    padding: 30px 0;
+}
+*/
+
+.home{
+    height: 500px;
+}
+
+.main-navigation{
+    margin: 0;
+    background-color: #369c36;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.79);
+    z-index: 1000;
 }
 .main-navigation ul{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    font-size: x-large;
+    
 }
 
 .main-navigation a{
     color: var(--text-color);
     text-decoration: none;
+    
+    display: block;
+    padding: 20px 5px;
 }
 
 .main-navigation li{
     padding: 0 15px;
+
 }
+
+.main-navigation p{
+    padding-top: 30px;
+}
+.footer{
+    padding-top: 330px;
+    flex-direction: row;
+    display: flex;
+    font-size: xx-large;
+   
+}
+.main-navigation li:hover{
+    background-color: #5cb85c; /* Verde mais claro para destaque */
+    color: white; 
+}
+.sidebar-pic{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.sidebar-pic img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.79);
+}
+
+.sidebar-pic img:hover{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.79);
+}
+
 
 .container{
     max-width: 1200px;
@@ -41,19 +99,29 @@ body{
     margin: auto;
     
 }
-.profile-grid{
-    padding-top: 30px;
+.home-grid{
+    padding-top: 100px;
+    font-size: xx-large;
+    color: rgb(92, 18, 7);
+    
+    padding-left: 100px;
+}
+
+.home-grid h2{
+    padding-bottom: 30px;
+    padding-left: 90px;
 }
 .profile-pic{
-    float: left;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    animation: fadeIn 2s;
+    /*animation: fadeIn 2s;*/
+    border-radius: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .clearfix::after{
     content: "";
@@ -61,7 +129,27 @@ body{
     display: table;
 
 }
+.profile-grid{
+    padding-top: 70px;
+    line-height: 1.5em;
+    font-size: large;
+}
 
+.profile-grid h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.profile-grid p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1750px){
+    .main-navigation{
+        position: relative;
+    }
+}
+    
 @media screen and (max-width: 768px){
     .main-navigation ul{
         flex-direction: column;
@@ -70,14 +158,20 @@ body{
         margin-bottom: 10px;
         font-size: large; /*De preferencia não usar o px para o tamanho da fonte*/
     }
-    .profile-pic{
+    .home-pic{
+        padding-left: 0px;
         float: none;
         padding-bottom: 10px;
         margin: 0 auto;
+        padding-left: 0px;
     }
-    .profile-grid{
+    .home-grid{
+        padding-left: 0px;
         padding-top: 10px;
         padding-bottom: 40px;
+    }
+    .home-grid h2{
+        padding-left: 0px;
     }
     .container{
         text-align: center;
@@ -85,12 +179,16 @@ body{
     }
 }
 
-
+.project h2{
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 15px;
+}
 
 .project-grid{
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding-top: 10px;
     padding-bottom: 30px;
 }
@@ -100,6 +198,8 @@ body{
     box-shadow: 0 0 10px var(--shadow-color);
     border-radius: 5px;
     transition: box-shadow var(--trasition-speed);
+    max-width: 500px; /* Defina o valor máximo desejado para a largura do item */
+    margin: 0 auto; /* Isso centralizará cada item na grade */
 }
 
 .project-item:hover{
@@ -110,20 +210,70 @@ body{
     width: 100%;
     height: 200px;
     object-fit: contain;
-    border-bottom: 3px solid;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img-fatecie{
+    width: 80%;
+    padding-left: 50px;
 }
 
 .project-info{
+    border-top: 3px solid;
     padding: 10px;
 }
-.formation{
-    padding-top: 5px;
-    padding-bottom: 20px;
+
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.formation ul{
-    list-style-type: none;
-    padding: 0;
+
+.skill-grid {
+    background-color: var(--secondary-color);
+    margin: 20px;
+    width: 45%;
 }
+
+.skill-grid ul{
+    padding-top: 10px;
+    list-style: none;
+    font-size: large;
+
+}
+
+
+.skill-grid h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.language{
+    column-count: 2;
+    padding-left: 30px;
+}
+
+.language i{
+    font-size: xx-large;
+}
+
+.skill-grid li{
+    padding-bottom: 10px;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/*
+@keyframes fadeIn {
+    0%{background-color: red;}
+    50%{background-color: blue;}
+    100%{background-color: green;}
+}
+
 
 .contact-grid{
     display: grid;
@@ -139,7 +289,7 @@ body{
 }
 
 .contact-grid li{
-    background-color: #28a745; /*369c36 cor do fundo da imagem. 28a745 cor original*/
+    background-color: #28a745; /*369c36 cor do fundo da imagem. 28a745 cor original
     box-shadow: 0 0 10px var(--shadow-color);
     border-radius: 5px;
     padding: 8px 60px;
@@ -148,9 +298,9 @@ body{
 }
 
 .contact-grid img {
-    width: 30px; /* Ajuste a largura conforme necessário */
+    width: 30px;
     height: auto;
-    margin-left: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 10px; 
 }
 
 .contact-grid a{
@@ -161,15 +311,4 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
-
-@keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-/*
-@keyframes fadeIn {
-    0%{background-color: red;}
-    50%{background-color: blue;}
-    100%{background-color: green;}
-}*/
+*/
