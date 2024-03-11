@@ -36,7 +36,6 @@ body{
     align-items: center;
     position: fixed;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.79);
-    z-index: 1000;
 }
 .main-navigation ul{
     list-style: none;
@@ -69,7 +68,7 @@ body{
    
 }
 .main-navigation li:hover{
-    background-color: #5cb85c; /* Verde mais claro para destaque */
+    background-color: #5cb85c; 
     color: white; 
 }
 .sidebar-pic{
@@ -84,7 +83,7 @@ body{
 .sidebar-pic img{
     max-width: 100%;
     height: auto;
-    border-radius: 25%;
+    border-radius: 20%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.79);
 }
 
