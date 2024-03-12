@@ -8,13 +8,13 @@
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Museo Sans', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #cdf1cb;
     color: #3f3b3b;
 }
 
 /*
-.site-footer{
+.site-header .site-footer{
     background-color: var(--primary-color);
     color: var(--text-color);
     font-size: larger;
@@ -69,7 +69,6 @@ body{
 }
 .main-navigation li:hover{
     background-color: #5cb85c; 
-    color: white; 
 }
 .sidebar-pic{
     width: 60%;
@@ -102,8 +101,12 @@ body{
     padding-top: 100px;
     font-size: xx-large;
     color: rgb(92, 18, 7);
-    
     padding-left: 100px;
+    text-shadow:
+            -1px -1px 2px white,
+            1px -1px 2px white,
+            -1px 1px 2px white,
+            1px 1px 2px white;
 }
 
 .home-grid h2{
@@ -119,8 +122,7 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .clearfix::after{
     content: "";
@@ -140,43 +142,11 @@ body{
 }
 
 .profile-grid p{
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 20px;
+    line-height: 2.2;
 }
-@media screen and (max-width: 1750px){
-    .main-navigation{
-        position: relative;
-    }
-}
-    
-@media screen and (max-width: 768px){
-    .main-navigation ul{
-        flex-direction: column;
-    }
-    .main-navigation li{
-        margin-bottom: 10px;
-        font-size: large; /*De preferencia não usar o px para o tamanho da fonte*/
-    }
-    .home-pic{
-        padding-left: 0px;
-        float: none;
-        padding-bottom: 10px;
-        margin: 0 auto;
-        padding-left: 0px;
-    }
-    .home-grid{
-        padding-left: 0px;
-        padding-top: 10px;
-        padding-bottom: 40px;
-    }
-    .home-grid h2{
-        padding-left: 0px;
-    }
-    .container{
-        text-align: center;
-        
-    }
-}
+
 
 .project h2{
     font-size: xx-large;
@@ -193,7 +163,7 @@ body{
 }
 
 .project-item{
-    background-color: white;
+    background-color: rgb(182, 229, 179);
     box-shadow: 0 0 10px var(--shadow-color);
     border-radius: 5px;
     transition: box-shadow var(--trasition-speed);
@@ -262,9 +232,99 @@ body{
 .skill-grid li{
     padding-bottom: 10px;
 }
+
+.site-footer{
+    display: none;
+}
 @keyframes fadeIn{
     from{opacity: 0;}
     to{opacity: 1;}
+}
+
+@media screen and (max-width: 1750px) {
+    .main-navigation {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .sidebar{
+        padding-bottom: 10px;
+    }
+    .main-navigation{
+        width: 100%;
+    }
+
+    .main-navigation li {
+        font-size: x-large;
+        /*De preferencia não usar o px para o tamanho da fonte*/
+    }
+
+    .main-navigation p{
+        display: none;
+    }
+
+    .sidebar-pic{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+
+    .home-pic {
+        padding-left: 0px;
+        float: none;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    .home-grid {
+        padding-left: 0px;
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
+
+    .home-grid h2 {
+        padding-left: 0px;
+    }
+
+    .container {
+        text-align: center;
+
+    }
+    .project{
+        margin-right: 10px;
+    }
+
+    .skill-grid {
+        margin: none;
+    }
+
+    .language {
+        column-count: 1;
+        padding-left: 0px;
+    }
+
+    .site-footer{
+        width: 100%;
+        height: 40px;
+        background-color: var(--primary-color);
+        font-size: larger;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer div{
+        font-size: xx-large;
+        padding-bottom: 10px;
+    }
+    
+
+    
 }
 /*
 @keyframes fadeIn {
