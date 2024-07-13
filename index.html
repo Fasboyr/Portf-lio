@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
 
     <title>Portfólio</title>
 </head>
-<body>
+
+<body data-theme="dark">
     <header class="sidebar">
         <div class="sidebar-container">
             <nav class="main-navigation">
@@ -19,38 +23,55 @@
                         <img src="img/pixel-me.png" alt="Minha foto">
                     </a>
                 </div>
-                    <ul>    
-                        <li><a href="#sobre-mim">Sobre Mim</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#formacao">Formação</a></li>
-                    </ul>
-                    <div class="footer">
-                        <a href="https://github.com/Fasboyr"><i class="devicon-github-plain"></i></a>
-                        <a href="https://www.facebook.com/fabioroberto.pereirafilho"><i class="devicon-facebook-plain"></i></a>
-                        <a href="https://wa.me/5544997206594"><i class="fi fi-brands-whatsapp"></i></a>
+                <ul>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                </ul>
+                <div class="footer">
+                    <a href="https://github.com/Fasboyr"><i class="devicon-github-plain"></i></a>
+                    <div class="copy-button">
+                        <input type="text" id="github-link" value="https://github.com/Fasboyr" style="display:none">
+                        <a href="#" onclick="copiarConteudo('github-link')"><i
+                                class="mdi mdi-content-copy icon-copy"></i></a>
                     </div>
-                    <p>&copy; 2024 Fabio Filho</p>
+                    <a href="https://www.facebook.com/fabioroberto.pereirafilho"><i
+                            class="devicon-facebook-plain"></i></a>
+                    <div class="copy-button">
+                        <input type="text" id="facebook-link" value="https://www.facebook.com/fabioroberto.pereirafilho"
+                            style="display:none">
+                        <a href="#" onclick="copiarConteudo('facebook-link')"><i
+                                class="mdi mdi-content-copy icon-copy"></i></a>
+                    </div>
+                    <a href="https://wa.me/5544997206594"><i class="fi fi-brands-whatsapp"></i></a>
+                    <div class="copy-button">
+                        <input type="text" id="wpp-numero" value="5544997206594" style="display:none">
+                        <a href="#" onclick="copiarConteudo('wpp-numero')"><i
+                                class="mdi mdi-content-copy icon-copy"></i></a>
+                    </div>
+                </div>
+                <p>&copy; 2024 Fabio Filho</p>
             </nav>
         </div>
     </header>
 
+
     <main class="container">
-        <section class="home" id="home" style="background-image: url('img/dev-verde.jpg');">
-            <div class="home-grid">
-                <h2>Olá!</h2>
-                <h3>Seja bem vindo!</h2>   
-            </div>
-        </section>
         <section id="sobre-mim">
             <section class="clearfix" id="sobre-mim">
+                <div class="botao-tema">
+                    <a href="#" onclick="alterarTema()" id="linkAlterarTema"><span
+                            class="mdi mdi-theme-light-dark"></span></a>
+                </div>
                 <div class="profile-grid">
-                    <img class="profile-pic" src="img/eu.jfif" alt="Minha foto"/>
+                    <img class="profile-pic" src="img/eu.jfif" alt="Minha foto" />
                     <h2>Sobre Mim</h2>
-                    <p>Olá, eu sou o <strong>Fabio R. Pereira Filho</strong>, tenho 22 anos de idade e estou atualmente cursando meu 3º ano de <strong>Engenharia de Software</strong>. Ainda não trabalhei na minha área de estudo, 
-                        mas tenho experiência profissional e me dou bem com meus colegas de trabalho, tendo dedicação e iniciativa em minhas tarefas.
-                        Embora minha experiência profissional seja limitada, tenho trabalhado diligentemente em Cursos e <strong>Projetos Acadêmicos</strong> durante minha graduação, que me permitirão aprimirorar minhas habilidades em desenvolvimento.
-                        Procuro oportunidades de estágio ou projetos que permitam aplicar meus conhecimentos acadêmicos de maneira prática e adquirir experiência no mundo real. 
-                        Estou animado com a perspectiva de contribuir para projetos inovadores e aprender com profissionais experientes no campo.</p>
+                    <p>Olá, eu sou o <strong>Fabio R. Pereira Filho</strong>, tenho 22 anos de idade e estou atualmente
+                        cursando meu 3º ano de <strong>Engenharia de Software</strong>.
+                        Procuro oportunidades de estágio ou projetos que permitam aplicar meus conhecimentos acadêmicos
+                        de maneira prática e adquirir experiência no mundo real.
+                        Estou animado com a perspectiva de contribuir para projetos inovadores e aprender com
+                        profissionais experientes no campo.</p>
                     </p>
                 </div>
             </section>
@@ -60,10 +81,11 @@
             <h2>Projetos Desenvolvidos</h2>
             <div class="project-grid">
                 <article class="project-item">
-                        <img src="img/space-invaders.png" alt="Marca Space Invaders">
+                    <img src="img/space-invaders.png" alt="Marca Space Invaders">
                     <div class="project-info">
                         <h3>Space Explorer</h3>
-                        <p>Um programa inspirado nos classicos jogos de nave dos antigos arcades, inspirado no jogo Space Invander</p>
+                        <p>Um programa inspirado nos classicos jogos de nave dos antigos arcades, inspirado no jogo
+                            Space Invander</p>
                     </div>
                 </article>
                 <article class="project-item">
@@ -73,16 +95,17 @@
                         <p>Um projeto com objetivo de simular a a execução de processadores pipeline e monociclo</p>
                     </div>
                 </article>
-                
+
                 <article class="project-item">
                     <div class="img-fatecie">
                         <img src="img/logo.png" alt="Marca UniFatecie">
                     </div>
                     <div class="project-info">
                         <h3>Portal do Aluno</h3>
-                        <p>Projeto de desenvolvimento de um portal do aluno feito durante o Dev Challenge da UniFatecie em Julho de 2023</p>
+                        <p>Projeto de desenvolvimento de um portal do aluno feito durante o Dev Challenge da UniFatecie
+                            em Julho de 2023</p>
                     </div>
-                
+
                 </article>
             </div>
         </section>
@@ -92,54 +115,56 @@
                 <div class="formation">
                     <ul>
                         <li><strong>Curso:</strong> Engenharia de Software - 3º Ano</li>
-                        <li><strong>Instituição:</strong>  Instituto Federal do Paraná (IFPR) - Campus Paranavaí</li>
+                        <li><strong>Instituição:</strong> Instituto Federal do Paraná (IFPR) - Campus Paranavaí</li>
                         <li><strong>Previsão de Conclusão:</strong> Dezembro/2025</li>
                     </ul>
                 </div>
             </div>
-            <div class="skill-grid language-grid" >
+            <div class="skill-grid language-grid">
                 <h2>Linguagens de Programação</h2>
-                    <ul class="language">
-                        <li><i class="devicon-java-plain colored"></i> - Intermediário</li>
-                        <li><i class="devicon-python-plain colored"></i> - Intermediário</li>
-                        <li><i class="devicon-javascript-plain"></i> - Básico
-                        <li><i class="devicon-c-plain colored"></i> - Básico</li>
-                        <li><i class="devicon-cplusplus-plain colored"></i> - Básico</li>
-                    </ul>
-            </div>
-        </section>
-        <!--
-        <section id="contato">
-            <h2>Contato</h2>
-            <div class="contact-grid">
-                <ul>    
-                    <li>
-                        <a href="#facebook">
-                            <span>Facebook</span>
-                            <img src="img/foto-bebe-m.png" alt="Facebook">
-                        </a>
-                    </li>
-                    <li><a href="#telefone">
-                            <span>Telefone</span>
-                            <img src="img/pixel-me.png" alt="Telefone">
-                        </a>
-                    </li>
+                <ul class="language">
+                    <li><i class="devicon-java-plain colored"></i> - Intermediário</li>
+                    <li><i class="devicon-python-plain colored"></i> - Intermediário</li>
+                    <li><i class="devicon-javascript-plain"></i> - Básico
+                    <li><i class="devicon-c-plain colored"></i> - Básico</li>
+                    <li><i class="devicon-cplusplus-plain colored"></i> - Básico</li>
                 </ul>
             </div>
         </section>
-        -->
+        <section class="tools">
+            <h1>Ferramentas</h1>
+            <h2>Selecione um Fuso horario</h2>
+            <select id="select-fusos">
+                <option value="America/New_York">Eastern Standard Time (EST) - Nova York</option>
+                <option value="Europe/London">Greenwich Mean Time (GMT) - Londres</option>
+                <option value="Asia/Tokyo">Japan Standard Time (JST) - Tóquio</option>
+                <option value="Australia/Sydney">Australian Eastern Standard Time (AEST) - Sydney</option>
+                <option value="America/Sao_Paulo">Hora de Brasília (BRT) - São Paulo</option>
+                <option value="Europe/Paris">Central European Time (CET) - Paris</option>
+                <option value="Africa/Nairobi">East Africa Time (EAT) - Nairobi</option>
+                <option value="Asia/Dubai">Gulf Standard Time (GST) - Dubai</option>
+                <option value="Asia/Kolkata">Indian Standard Time (IST) - Mumbai</option>
+                <option value="Pacific/Honolulu">Hawaii-Aleutian Standard Time (HST) - Honolulu</option>
+                <option value="Pacific/Auckland">New Zealand Standard Time (NZST) - Auckland</option>
+                <option value="Pacific/Samoa">Samoa Standard Time (SST) - Apia</option>
+                <option value="America/Los_Angeles">Pacific Standard Time (PST) - Los Angeles</option>
+                <option value="America/Chicago">Central Standard Time (CST) - Chicago</option>
+                <option value="America/Denver">Mountain Standard Time (MST) - Denver</option>
+                <option value="Asia/Singapore">Singapore Standard Time (SGT) - Cingapura</option>
+                <option value="Asia/Seoul">Korea Standard Time (KST) - Seul</option>
+                <option value="Asia/Hong_Kong">Hong Kong Standard Time (HKT) - Hong Kong</option>
+                <option value="Europe/Moscow">Moscow Standard Time (MSK) - Moscou</option>
+                <option value="Europe/Berlin">Central European Time (CET) - Berlim</option>
+            </select>
+            <p id="hora-atual"></p>
+        </section>
     </main>
-
-    <footer class="site-footer">
-        <div>
-            <a href="https://github.com/Fasboyr"><i class="devicon-github-plain"></i></a>
-            <a href="https://www.facebook.com/fabioroberto.pereirafilho"><i class="devicon-facebook-plain"></i></a>
-            <a href="https://wa.me/5544997206594"><i class="fi fi-brands-whatsapp"></i></a>
-        </div>
-        <p>&copy; 2024 Fabio Filho</p>
-    </footer>
 </body>
+
 </html>
+
+
+<script src="index.js"></script>
 
 <!-- 
     <meta nome="description"
@@ -150,4 +175,8 @@
     <meta property="og:description" content="Portfólio de">
     <meta property="image" content="URL_da_Imagem">
     <meta property="url" content="URL_da_Página">
+
+      <a target="_blank" id="github" data-value="@Fasboyr" href="https://github.com/Fasboyr"><i class="devicon-github-plain"></i></a>
+                        <a target="_blank" id="facebook" data-value="fabioroberto.pereirafilho" href="https://www.facebook.com/fabioroberto.pereirafilho"><i class="devicon-facebook-plain"></i></a>
+                        <a target="_blank" id="wpp" data-value="+544997206594" href="https://wa.me/5544997206594"><i class="fi fi-brands-whatsapp"></i></a>
  -->
