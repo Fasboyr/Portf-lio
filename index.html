@@ -20,15 +20,16 @@
             <nav class="main-navigation">
                 <div class="sidebar-pic">
                     <a href="#home">
-                        <img src="img/pixel-me.png" alt="Minha foto">
+                        <img src="img/pixel-me.png" alt="Minha foto" class="foto">
                     </a>
                 </div>
                 <ul>
                     <li><a href="#sobre-mim">Sobre Mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#formacao">Ensino</a></li>
+                    <li><a href="#ferramentas">Ferramentas</a></li>
                 </ul>
-                <div class="footer">
+                <div class="sidebar-footer">
                     <a href="https://github.com/Fasboyr"><i class="devicon-github-plain"></i></a>
                     <div class="copy-button">
                         <input type="text" id="github-link" value="https://github.com/Fasboyr" style="display:none">
@@ -50,7 +51,7 @@
                                 class="mdi mdi-content-copy icon-copy"></i></a>
                     </div>
                 </div>
-                <p>&copy; 2024 Fabio Filho</p>
+                <p class="copyright">&copy; 2024 Fabio Filho</p>
             </nav>
         </div>
     </header>
@@ -79,86 +80,246 @@
         </section>
         <section id="projetos" class="project">
             <h2>Projetos Desenvolvidos</h2>
-            <div class="project-grid">
-                <article class="project-item">
-                    <img src="img/space-invaders.png" alt="Marca Space Invaders">
-                    <div class="project-info">
-                        <h3>Space Explorer</h3>
-                        <p>Um programa inspirado nos classicos jogos de nave dos antigos arcades, inspirado no jogo
-                            Space Invander</p>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <img src="img/processador.png" alt="Marca Processador">
-                    <div class="project-info">
-                        <h3>Simulador de Processador</h3>
-                        <p>Um projeto com objetivo de simular a a execução de processadores pipeline e monociclo</p>
-                    </div>
-                </article>
+            <div class="project-container">
+                <div class="slider-wrapper">
+                    <div class="project-slider">
+                        <article class="project-item" id="projeto 1">
+                            <img src="img/space-invaders.png" alt="Marca Space Invaders">
+                            <div class="project-info">
+                                <h3>Space Explorer</h3>
+                                <p>Um projeto com o objetivo de desenvolver em Java um jogo simples inspirado nos
+                                    classicos jogos de nave dos Arcades</p>
+                            </div>
+                        </article>
 
-                <article class="project-item">
-                    <div class="img-fatecie">
-                        <img src="img/logo.png" alt="Marca UniFatecie">
-                    </div>
-                    <div class="project-info">
-                        <h3>Portal do Aluno</h3>
-                        <p>Projeto de desenvolvimento de um portal do aluno feito durante o Dev Challenge da UniFatecie
-                            em Julho de 2023</p>
-                    </div>
+                        <article class="project-item" id="projeto 2">
+                            <img src="img/processador.png" alt="Marca Processador">
+                            <div class="project-info">
+                                <h3>Simulador de Processador</h3>
+                                <p>Um projeto com objetivo de desenvolver um simulador na lingangem C. Ele busca simular
+                                    a execução de processadores pipeline e monociclo usando uma arquitetura hipotética
+                                    criada pelo professor</p>
+                            </div>
+                        </article>
 
-                </article>
+                        <article class="project-item" id="projeto 3">
+                            <div class="img-fatecie">
+                                <img src="img/logo.png" alt="Marca UniFatecie">
+                            </div>
+                            <div class="project-info">
+                                <h3>Portal do Aluno</h3>
+                                <p>Projeto de desenvolvimento de um Portal do Aluno. Feito durante o Dev Challenge da
+                                    UniFatecie
+                                    em Julho de 2023, o Portal foi projetado com a intenção de adicionar mecânicas de
+                                    gameficação à suas funcionaldiades.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#projeto 1"></a>
+                        <a href="#projeto 2"></a>
+                        <a href="#projeto 3"></a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="grid" id="formacao">
+            <h2>Formação Acadêmica</h2>
             <div class="skill-grid">
-                <h2>Formação Acadêmica</h2>
                 <div class="formation">
-                    <ul>
-                        <li><strong>Curso:</strong> Engenharia de Software - 3º Ano</li>
-                        <li><strong>Instituição:</strong> Instituto Federal do Paraná (IFPR) - Campus Paranavaí</li>
-                        <li><strong>Previsão de Conclusão:</strong> Dezembro/2025</li>
-                    </ul>
+                    <h3>Engenharia de Software</h3>
+                    <h4>2020/Presente -Instituto Federal do Paraná (IFPR) Campus Paranavaí </h4>
+                    <p>O curso de Engenharia de Software do IFPR - Campus Paranavaí é uma graduação tecnológica que
+                        oferece uma formação sólida e abrangente em desenvolvimento de software, gestão de projetos,
+                        qualidade de software, engenharia de requisitos, entre outros.
+                        Estudo inicializado em 2020 mas pausado por conta da pandemia, curso retomado em 2022</p>
                 </div>
             </div>
-            <div class="skill-grid language-grid">
+            <h2>Cursos</h2>
+            <div class="skill-grid">
+                <h3>BootCamp Java BackEnd Developer</h3>
+                <h4>2024 - Digital Inovation One</h4>
+                <p>Curso intensivo de Java patrocinado pelo Santander em parceria com DIO, ensinando temas do básico ao
+                    avançado com Java,
+                    como: metodologias ágeis, sintaxe e práticas de codificação em Java, programação orientada a
+                    objetos, bancos de dados SQL e NoSQL, e
+                    desenvolvimento de APIs REST com o Spring Framework.</p>
+            </div>
+            <div class="skill-grid">
+                <h3>Curso Básico JavaScript</h3>
+                <h4>2024 - Curso em Vídeo</h4>
+                <p>Curso de intrução à linguagem JavaScript, introduzindo sua historia, conhecimento da linguagem e uso
+                    de funções, abordando sobre o
+                    ECMAScript, a versão padronizada do JS</p>
+            </div>
+            <div class="skill-grid">
+                <h3>Curso de inglês</h3>
+                <h4>2020 - KNN Idiomas</h4>
+                <p>Curso de inglês ministrado pela KNN idiomas com foco no aprendizado da fala através de ambientes
+                    familiares, assimilando gramática e vocabulário através de conversas
+                    desde a primeira aula.</p>
+            </div>
+            <div class="skill-grid">
+                <h3>Curso de Automação com Internet das Coisas (IoT)</h3>
+                <h4>2023 - Instituto Federal do Paraná (IFPR) - Campus Paranavaí</h4>
+                <p>O Curso de Automação com Internet das Coisas foi um curso de extensão oferecido para alunos do
+                    instituto e da comunidade que forneceu uma formação básica nos conceito de Iot, programação e
+                    montagem de
+                    eletronicos básicos para prova dos conceitos ensinados. </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="language-grid">
                 <h2>Linguagens de Programação</h2>
                 <ul class="language">
-                    <li><i class="devicon-java-plain colored"></i> - Intermediário</li>
-                    <li><i class="devicon-python-plain colored"></i> - Intermediário</li>
-                    <li><i class="devicon-javascript-plain"></i> - Básico
-                    <li><i class="devicon-c-plain colored"></i> - Básico</li>
-                    <li><i class="devicon-cplusplus-plain colored"></i> - Básico</li>
+                    <li>
+                        <i class="devicon-java-plain colored"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-python-plain colored"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-javascript-plain"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-c-plain colored"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-cplusplus-plain colored"></i>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section class="tools">
+
+
+        <section class="tools" id="ferramentas">
             <h1>Ferramentas</h1>
-            <h2>Selecione um Fuso horario</h2>
-            <select id="select-fusos">
-                <option value="America/New_York">Eastern Standard Time (EST) - Nova York</option>
-                <option value="Europe/London">Greenwich Mean Time (GMT) - Londres</option>
-                <option value="Asia/Tokyo">Japan Standard Time (JST) - Tóquio</option>
-                <option value="Australia/Sydney">Australian Eastern Standard Time (AEST) - Sydney</option>
-                <option value="America/Sao_Paulo">Hora de Brasília (BRT) - São Paulo</option>
-                <option value="Europe/Paris">Central European Time (CET) - Paris</option>
-                <option value="Africa/Nairobi">East Africa Time (EAT) - Nairobi</option>
-                <option value="Asia/Dubai">Gulf Standard Time (GST) - Dubai</option>
-                <option value="Asia/Kolkata">Indian Standard Time (IST) - Mumbai</option>
-                <option value="Pacific/Honolulu">Hawaii-Aleutian Standard Time (HST) - Honolulu</option>
-                <option value="Pacific/Auckland">New Zealand Standard Time (NZST) - Auckland</option>
-                <option value="Pacific/Samoa">Samoa Standard Time (SST) - Apia</option>
-                <option value="America/Los_Angeles">Pacific Standard Time (PST) - Los Angeles</option>
-                <option value="America/Chicago">Central Standard Time (CST) - Chicago</option>
-                <option value="America/Denver">Mountain Standard Time (MST) - Denver</option>
-                <option value="Asia/Singapore">Singapore Standard Time (SGT) - Cingapura</option>
-                <option value="Asia/Seoul">Korea Standard Time (KST) - Seul</option>
-                <option value="Asia/Hong_Kong">Hong Kong Standard Time (HKT) - Hong Kong</option>
-                <option value="Europe/Moscow">Moscow Standard Time (MSK) - Moscou</option>
-                <option value="Europe/Berlin">Central European Time (CET) - Berlim</option>
-            </select>
-            <p id="hora-atual"></p>
+            <div class="tools-grid">
+                <h2>Selecione um Fuso horario</h2>
+                <select id="select-fusos" class="fusos">
+                    <option value="Africa/Johannesburg">África Central (CET) - Cidade do Cabo, África do Sul</option>
+                    <option value="Africa/Nairobi">África Oriental (EAT) - Nairóbi, Quênia</option>
+                    <option value="America/Anchorage">Alaska (AKT) - Anchorage, EUA</option>
+                    <option value="America/Manaus">Amazônia (AMT) - Manaus, Brasil</option>
+                    <option value="Asia/Riyadh">Arábia (AST) - Riad, Arábia Saudita</option>
+                    <option value="America/Los_Angeles">Arco do Pacífico (PDT) - Los Angeles, EUA</option>
+                    <option value="Australia/Adelaide">Austrália Central (ACST) - Adelaide, Austrália</option>
+                    <option value="Australia/Perth">Austrália Ocidental (AWST) - Perth, Austrália</option>
+                    <option value="America/Sao_Paulo">Brasília (BRT) - Brasília, Brasil</option>
+                    <option value="Asia/Singapore">Canal (CCT) - Cingapura, Cingapura</option>
+                    <option value="America/Puerto_Rico">Caribeno (AST) - San Juan, Porto Rico</option>
+                    <option value="Europe/Paris">Champanhe (CEST) - Paris, França</option>
+                    <option value="Asia/Shanghai">China (CST) - Pequim, China</option>
+                    <option value="Asia/Manila">Coração do Pacífico (PHT) - Manila, Filipinas</option>
+                    <option value="Europe/Moscow">Data (UTC+03:00) - Moscovo, Rússia</option>
+                    <option value="Europe/Berlin">Europa Central (CET) - Berlim, Alemanha</option>
+                    <option value="Pacific/Fiji">Fiji (FJT) - Suva, Fiji</option>
+                    <option value="Pacific/Galapagos">Galápagos (GALT) - Puerto Baquerizo Moreno, Equador</option>
+                    <option value="Europe/London">Greenwich (GMT) - Londres, Reino Unido</option>
+                    <option value="Pacific/Honolulu">Havai-Aleutianas (HST) - Honolulu, EUA</option>
+                    <option value="Asia/Kolkata">Índia (IST) - Nova Délhi, Índia</option>
+                    <option value="Asia/Jakarta">Indonésia Ocidental (WIB) - Jacarta, Indonésia</option>
+                    <option value="Asia/Tehran">Irã (IRST) - Teerã, Irã</option>
+                    <option value="Asia/Tel_Aviv">Israel (IST) - Tel Aviv, Israel</option>
+                    <option value="Asia/Tokyo">Japonesa (JST) - Tóquio, Japão</option>
+                    <option value="Indian/Kerguelen">Kerguelen (TFT) - Port-aux-Français, Ilhas Kerguelen</option>
+                    <option value="Asia/Kuala_Lumpur">Kuala Lumpur (MYT) - Kuala Lumpur, Malásia</option>
+                    <option value="Africa/Casablanca">Marrocos (CET) - Casablanca, Marrocos</option>
+                    <option value="Indian/Mauritius">Maurício (MUT) - Port Louis, Maurício</option>
+                    <option value="America/Mexico_City">Mexicana (CST) - Cidade do México, México</option>
+                    <option value="Asia/Kathmandu">Nepal (NPT) - Katmandu, Nepal</option>
+                    <option value="Pacific/Auckland">Nova Zelândia (NZST) - Auckland, Nova Zelândia</option>
+                    <option value="Asia/Baghdad">Oriente Médio (MSK) - Moscovo, Rússia</option>
+                    <option value="Pacific/Port_Moresby">Papua-Nova Guiné (PGT) - Port Moresby, Papua-Nova Guiné
+                    </option>
+                    <option value="America/Lima">Peru (PET) - Lima, Peru</option>
+                    <option value="Pacific/Pitcairn">Pitcairn (PST) - Adamstown, Ilhas Pitcairn</option>
+                    <option value="Europe/Moscow">Rússia (MSK) - São Petersburgo, Rússia</option>
+                    <option value="Pacific/Apia">Samoa (SST) - Apia, Samoa</option>
+                    <option value="Africa/Sao_Tome">São Tomé e Príncipe (GMT) - São Tomé, São Tomé e Príncipe</option>
+                    <option value="Asia/Bangkok">Sudeste Asiático (SEAT) - Banguecoque, Tailândia</option>
+                    <option value="Asia/Taipei">Taiwan (CST) - Taipei, Taiwan</option>
+                    <option value="Europe/Istanbul">Turquia (TRT) - Istambul, Turquia</option>
+                    <option value="America/Montevideo">Uruguai (UYT) - Montevidéu, Uruguai</option>
+                    <option value="Etc/UTC">UTC (UTC) - Reykjavik, Islândia</option>
+                    <option value="America/Caracas">Venezuela (VET) - Caracas, Venezuela</option>
+                    <option value="Etc/UTC">Zulu (Z) - Pretória, África do Sul</option>
+
+                </select>
+                <p id="hora-atual"></p>
+            </div>
+
+            <div class="tools-grid">
+                <h2>Estilizações Divertidas</h2>
+                <form id="translation-form" class="translation">
+                    <label for="text">Digite o texto em inglês para estilizar:</label><br>
+                    <input type="text" id="text" name="text" required><br><br>
+                    <label for="translation-type">Escolha o tipo de tradução:</label><br>
+                    <select id="translation-type" name="translation-type">
+                        <option value="pirate">Pirata</option>
+                        <option value="yoda">Yoda</option>
+                        <option value="valyrian">Valyrian</option>
+                        <option value="shakespeare">Shakespeare</option>
+                    </select><br><br>
+                    <button type="submit">Estilizar</button>
+                </form>
+                <div id="result" class="result"></div>
+            </div>
+
+            <div class="tools-grid">
+                <h2>Quiz de Trivia</h1>
+                <div id="quiz-container">
+                    <div id="question" class="question"></div>
+                    <div id="options"></div>
+                </div>
+            </div>
+
+            <div class="tools-grid">
+                <h2>Gerador de Piadas</h1>
+                <button class="botao" onclick="fetchJoke()">Obter Piada</button>
+                <div id="joke" class="joke"></div>
+            </div>
         </section>
+
     </main>
+    <footer class="footer">
+        <div class="smallscreen-footer">
+            <a href="https://github.com/Fasboyr"><i class="devicon-github-plain"></i></a>
+            <div class="copy-button">
+                <input type="text" id="github-link" value="https://github.com/Fasboyr" style="display:none">
+                <a href="#" onclick="copiarConteudo('github-link')"><i class="mdi mdi-content-copy icon-copy"></i></a>
+            </div>
+            <a href="https://www.facebook.com/fabioroberto.pereirafilho"><i class="devicon-facebook-plain"></i></a>
+            <div class="copy-button">
+                <input type="text" id="facebook-link" value="https://www.facebook.com/fabioroberto.pereirafilho"
+                    style="display:none">
+                <a href="#" onclick="copiarConteudo('facebook-link')"><i class="mdi mdi-content-copy icon-copy"></i></a>
+            </div>
+            <a href="https://wa.me/5544997206594"><i class="fi fi-brands-whatsapp"></i></a>
+            <div class="copy-button">
+                <input type="text" id="wpp-numero" value="5544997206594" style="display:none">
+                <a href="#" onclick="copiarConteudo('wpp-numero')"><i class="mdi mdi-content-copy icon-copy"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Fabio Filho</p>
+    </footer>
+
 </body>
 
 </html>
